@@ -20,7 +20,7 @@
 
 ---
 
-## Project 2: Monte Carlo Project Simulation 
+## Project 2: Monte Carlo Project Simulation Macro
 
 ### Overview 
 - Allows the user to simulate project NPV based on the variability of key line items
