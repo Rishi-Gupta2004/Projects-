@@ -26,7 +26,7 @@
   - Inputs follow either discrete, triangular or uniform distribution
 - Creates a Histogram that visualises the distribution of project outcomes
 ##### Screenshots
-![UserForm](mainUserform.png)  
+![UserForm](Userform.png)  
 ![Message Box](Monte_Messagebox.png)  
 ![Histogram](Historgram.png)   
 ![Output Data](Monte_Output.png)     
