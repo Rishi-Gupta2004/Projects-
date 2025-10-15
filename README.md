@@ -28,5 +28,5 @@
 ##### Screenshots
 ![UserForm](Userform.png)  
 ![Message Box](Monte_Messagebox.png)  
-![Histogram](Historgram.png)   
+![Histogram](Histogram.png)   
 ![Output Data](Monte_Output.png)     
