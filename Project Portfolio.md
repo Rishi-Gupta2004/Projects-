@@ -16,7 +16,6 @@
    - Internally computes IRR and NPV, displaying both in a message box
 ##### Screenshots
 ![UserForm](project-1/screenshot1.png)  
-![UserForm Output](project-1/screenshot1.png)   
 
 ---
 
