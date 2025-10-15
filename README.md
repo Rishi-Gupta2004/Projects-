@@ -8,14 +8,14 @@
    - fit with dynamic cells and excel formulas 
   
 ##### Screenshots
-![DCF Template](project-1/DCF.png)
+![DCF Template](DCF.png)
 
 
 #### Option 2 - Userform 
    - Allows the user to input key metrics into a userform
    - Internally computes IRR and NPV, displaying both in a message box
 ##### Screenshots
-![UserForm](main/DCF_Userform.png)  
+![UserForm](DCF_Userform.png)  
 
 ---
 
@@ -27,6 +27,6 @@
 - Creates a Histogram that visualises the distribution of project outcomes
 ##### Screenshots
 ![UserForm](mainUserform.png)  
-![Message Box](main/Monte_Messagebox.png)  
-![Histogram](main/Historgram.png)   
-![Output Data](main/Monte_Output.png)     
+![Message Box](Monte_Messagebox.png)  
+![Histogram](Historgram.png)   
+![Output Data](Monte_Output.png)     
