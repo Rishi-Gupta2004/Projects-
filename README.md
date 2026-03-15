@@ -15,7 +15,7 @@
    - Allows the user to input key metrics into a userform
    - Internally computes IRR and NPV, displaying both in a message box
 ##### Screenshots
-![UserForm](DCF_Userform.png)  
+![UserForm](Userform.png)  
 
 ---
 
