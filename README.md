@@ -1,9 +1,17 @@
-# Rishi Gupta — Finance & Tech Project Portfolio
+# Rishi Gupta — Finance Project Portfolio
 
 Welcome. This is a collection of projects I've built as a lover of Finance and more specifically equity valuation. 
 This is mostly Excel VBA tools that solve real problems I've encountered in financial modelling and analysis.
 
 I'm just someone who's addicted to the art of stock picking.
+
+Shout out to some of the individuals and firms who madce me fall in love with the game.
+- Aswath Damodaran
+- Martin Shkreli
+- Chris Hohn
+- Tiger Management
+- Berkshire
+- Mark Meldrum 
 
 > 📄 **[About Me →](about-me/index.html)**  
 > A bit more on who I am, what drives me, and where I'm headed.
