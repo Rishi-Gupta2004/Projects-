@@ -10,7 +10,7 @@ Shout out to some of the individuals and firms who madce me fall in love with th
 - Martin Shkreli
 - Chris Hohn
 - Tiger Management
-- Berkshire
+- Berkshire Hathaway
 - Mark Meldrum 
 
 > 📄 **[About Me →](about-me/index.html)**  
