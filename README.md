@@ -5,7 +5,7 @@ This is mostly Excel VBA tools that solve real problems I've encountered in fina
 
 I'm just someone who's addicted to the art of stock picking.
 
-Shout out to some of the individuals and firms who madce me fall in love with the game.
+Shout out to some of the individuals and firms who made me fall in love with the game.
 - Aswath Damodaran
 - Martin Shkreli
 - Chris Hohn
