@@ -1,7 +1,7 @@
 # Rishi Gupta — Finance & Tech Project Portfolio
 
 Welcome. This is a collection of projects I've built as a lover of Finance and more specifically equity valuation. 
-This ismostly Excel VBA tools that solve real problems I've encountered in financial modelling and analysis.
+This is mostly Excel VBA tools that solve real problems I've encountered in financial modelling and analysis.
 
 I'm just someone who's addicted to the art of stock picking.
 
