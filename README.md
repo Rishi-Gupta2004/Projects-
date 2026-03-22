@@ -1,8 +1,9 @@
 # Rishi Gupta — Finance & Tech Project Portfolio
 
-Welcome. This is a collection of projects I've built at the intersection of finance and technology — mostly Excel VBA tools that solve real problems I've encountered in financial modelling and analysis.
+Welcome. This is a collection of projects I've built as a lover of Finance and more specifically equity valuation. 
+This ismostly Excel VBA tools that solve real problems I've encountered in financial modelling and analysis.
 
-I'm a finance professional with a genuine obsession for building things that work. Every project here started as a question: *"Can I automate this? Can I make this smarter?"* — and then I went and built it.
+I'm just someone who's addicted to the art of stock picking.
 
 > 📄 **[About Me →](about-me/index.html)**  
 > A bit more on who I am, what drives me, and where I'm headed.
@@ -19,7 +20,7 @@ A VBA-powered DCF tool with two modes: a dynamic template generator that builds 
 ---
 
 ### 2. [Monte Carlo Simulation Engine](monte-carlo-simulation/)
-A simulation macro that models project NPV under uncertainty. Inputs follow discrete, triangular, or uniform distributions — the tool runs the simulations, generates a histogram of outcomes, and surfaces the key stats. Built because spreadsheet-based scenario analysis shouldn't be limited to three cases.
+A simulation macro that models project NPV under uncertainty. Inputs follow discrete, triangular, or uniform distributions — the tool runs the simulations, generates a histogram of outcomes, and surfaces the key stats. Monte Carlo sims blow my mind and has given me a true apreciation for maths.
 
 **Tech:** Excel VBA · Statistical Distributions · Histogram Generation · Simulation Logic
 
