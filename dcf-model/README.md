@@ -4,6 +4,14 @@ A macro-driven DCF tool built in Excel VBA, designed to streamline the valuation
 
 ---
 
+## What I Learned
+
+This was my first real VBA project. Honestly did not expect the vba course I took in 2025 to be applicable at all, but it was hoenstly one of the most interesting things i've learnt. 
+
+Just makes me love excel even more
+
+---
+
 ## Option 1: DCF Template Generator
 
 Generates a fully formatted, empty DCF template at the click of a button. You specify the forecast period and the macro builds out the entire structure. 
@@ -35,6 +43,3 @@ Useful when you need a quick answer without building a full model.
 
 ---
 
-## What I Learned
-
-This was my first real VBA project — the one that got me hooked on building tools rather than just using them. It taught me how to think about user interaction design within Excel, dynamic cell referencing, and writing modular subroutines that actually hold up when you change the inputs.
