@@ -122,7 +122,7 @@ The model is a 9-sheet workbook with clear separation of concerns:
 | **MC_Output** | Monte Carlo statistics — mean, median, percentiles, price comparison |
 | **MC_Histogram** | 50-bin distribution chart of simulated IVPS outcomes |
 | **Formulas** | Reference sheet — 69 formulas, Penman reformulated balance sheet, computed ratios |
-| **Qualitative** | SWOT, VRIS, bear/bull thesis, probability-of-occurrence diagram |
+| **Qualitative** | SWOT, VRIN, bear/bull thesis, probability-of-occurrence diagram |
 
 Data flows from Assumptions → Financials → Valuation → Scenarios / Monte Carlo. 
 
@@ -148,23 +148,6 @@ Named ranges create an abstraction layer so the VBA never hardcodes cell address
 | **ScenarioHelper** | Setup utility for scenario named ranges |
 | **Movement** | Sheet navigation (Dashboard, Assumptions, Qualitative) |
 | **NoteEditor** | Cell comment management — delete and restore notes |
-
----
-
-## Toggle-Driven Methodology
-
-The model adapts to different company types through binary toggles on the Assumptions sheet:
-
-| Toggle | What It Does |
-|--------|-------------|
-| `UseWACC` | WACC (CAPM-derived) vs. flat discount rate |
-| `UseAssetHeavy` | Fixed+variable cost structure with PP&E schedule vs. simple % of revenue |
-| `UseDetailedNWC` | DSO/DIO/DPO working capital vs. simple NWC % of revenue |
-| `UseSegmentGM` | Segment-level gross margins vs. consolidated |
-| `UseYoYGM` | Year-over-year gross margin curves vs. flat margins |
-| `DCFBasis` | Cash Proxy (NI−CapEx+D&A) vs. UFCF as primary valuation |
-| `TVMethod` | Explicit Perpetuity / Gordon Growth / Exit Multiple |
-| `UseTargetCapStruct` | Market capital structure vs. target D/E for WACC |
 
 ---
 
