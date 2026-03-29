@@ -29,16 +29,9 @@ The model adapts to different company types through binary toggles:
 
 ---
 
-## Screenshots
+## Workbook Link
 
 
-![Dashboard](screenshots/Dashboard.png)
-![Assumptions](screenshots/Assumptions.png)
-![Financials](screenshots/Financials.png)
-![Valuation](screenshots/Valuation.png)
-![Monte Carlo Output](screenshots/MC_Output.png)
-![Monte Carlo Histogram](screenshots/MC_Histogram.png)
-![Scenarios](screenshots/Scenarios.png)
 
 ---
 
