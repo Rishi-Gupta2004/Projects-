@@ -18,7 +18,9 @@ All downstream sheets — Financials, Valuation, Scenarios, Monte Carlo — reco
 
 The user populates a single Assumptions sheet with the target company's financials, valuation parameters, and uncertainty ranges. 
 
-From there, macro buttons on the Dashboard drive the entire workflow — projecting financials, running the DCF, stress-testing through scenarios, and simulating thousands of possible outcomes via Monte Carlo.
+From there, macro buttons on the Dashboard drive the entire workflow  
+
+Financials are projected, running the DCF, stress-tested through scenarios, and simulated in thousands of possible outcomes via Monte Carlo.
 
 The model adapts to different company types through binary toggles: 
 - Asset-heavy manufacturers get a fixed+variable cost structure with a PP&E schedule, while asset-light businesses use simpler margin-based projections.
