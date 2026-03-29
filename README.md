@@ -18,7 +18,7 @@ Shout out to some of the individuals and firms who made me fall in love with the
 
 ## Projects
 
-### 1. [Rishi's Equity Model](rishis-equity-model/)
+### 1. [Rishi's Equity Model](Equity-Analysis-Workbook/)
 <-- Date: 03/2026 -->
 
 A comprehensive, company-agnostic equity valuation framework built from applying a lot of various experiences into a streamlined VBA powered workbook. 
