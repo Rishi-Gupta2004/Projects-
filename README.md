@@ -46,7 +46,8 @@ Combines the following:
 
 A simulation macro that models project NPV under uncertainty. 
 
-Inputs follow discrete, triangular, or uniform distributions — the tool runs the simulations, generates a histogram of outcomes, and surfaces the key stats. 
+Inputs follow discrete, triangular, or uniform distributions. The tool runs the simulations, generates a histogram of outcomes, and surfaces the key stats. 
+
 Monte Carlo sims blow my mind and has given me a true apreciation for maths.
 
 **Tech:** Excel VBA 
