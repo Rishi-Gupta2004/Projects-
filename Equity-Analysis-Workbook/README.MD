@@ -4,6 +4,8 @@ Pretty proud of this one.
 
 Agentic Engineering was utilised in error handling, cleanup, etc 
 
+I feel like its the first consolidation of my knwledge in a very competant manner.
+
 Building this was such a terrific experience as it showed me a lot of valuable tools and skills and got me to really familiarize myself with the granularity that comes with fundamental financial analysis.
 
 ---
