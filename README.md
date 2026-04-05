@@ -21,7 +21,7 @@ Shout out to some of the individuals and firms who made me fall in love with the
 ## Projects
 
 ### 1. [Rishi's Equity Model](Equity-Analysis-Workbook/)
-<-- Date: 03/2026 -->
+<-- Date: 04/2026 -->
 
 A comprehensive, company-agnostic equity valuation framework built from applying a lot of various experiences into a streamlined VBA powered workbook. 
 I'm super proud of how this ones come. Currently on version **7.2** as of when your reading this.
@@ -31,7 +31,7 @@ Combines the following:
 - Monte Carlo simulation with correlated draws and autocorrelation (evolving the concepts from the my previous standalone Monte Carlo project through integration)
 - Three-scenario analysis, segment-level revenue modelling
 - Asset-heavy model toggles (allows for a goods vs services switchup)
-- Penman reformulated financials — all driven from a single Assumptions sheet via 275+ named ranges. Currently demonstrated with Sandisk Corporation.
+- Penman reformulated financials 
 
 **Tech:** Excel VBA 
 - Named Range Architecture
