@@ -4,9 +4,9 @@ Pretty proud of this one.
 
 Agentic Engineering was utilised in error handling, cleanup, etc 
 
-I feel like its the first consolidation of my knwledge in a very competant manner.
+I feel like it's the first consolidation of my knowledge in a very competent manner.
 
-Building and using this was such a terrific experience as it showed me a lot of valuable tools and skills and got me to really familiarize myself with the granularity that comes with fundamental financial analysis.
+Building and using this was such a terrific experience as it showed me a lot of valuable tools and skills and got me to really familiarise myself with the granularity that comes with fundamental financial analysis.
 
 ---
 
@@ -75,7 +75,7 @@ Bull/Base/Bear Scenario. You know the deal
 
 ### Penman Reformulated Financials
 
-The Formulas sheet implements Stephen Penman's equity valuation framework. This guys insights are no joke.
+The Formulas sheet implements Stephen Penman's equity valuation framework. This guy's insights are no joke.
 
 ---
 
