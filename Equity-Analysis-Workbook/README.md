@@ -113,61 +113,15 @@ The Formulas sheet implements Stephen Penman's equity valuation framework. This 
 
 ---
 
-## Workbook Architecture
+## Under the Hood
 
-The model is a 9-sheet workbook with clear separation of concerns:
+The workbook is 9 sheets with data flowing from Assumptions → Financials → Valuation → Scenarios / Monte Carlo. 
 
-| Sheet | Role |
-|-------|------|
-| **Dashboard** | VBA control centre |
-| **Assumptions** | The only sheet the user modifies — all inputs, toggles, segment config, MC parameters |
-| **Financials** | Multi-year projected Income Statement, Cash Flow, Working Capital, PP&E Schedule |
-| **Valuation** | DCF output, equity bridge, IVPS, terminal value cross-checks, sensitivity table |
-| **Scenarios** | Bull/Base/Bear with probability-weighted IVPS and sensitivity matrix |
-| **MC_Output** | Monte Carlo statistics |
-| **MC_Histogram** | 50-bin distribution chart of simulated IVPS outcomes |
-| **Formulas** | Reference sheet — 69 formulas, Penman reformulated balance sheet, computed ratios |
-| **Qualitative** | SWOT, VRIN, bear/bull thesis, probability-of-occurrence diagram |
+The user only touches the Assumptions sheet. Everything else is auto-generated
 
-Data flows from Assumptions → Financials → Valuation → Scenarios / Monte Carlo. Named ranges create an abstraction layer so the VBA never hardcodes cell addresses.
+The codebase spans 14 modules covering the forecast engine, valuation writer, Monte Carlo simulation, scenario analysis, statistical distributions, and shared formatting. 275+ named ranges create an abstraction layer so the VBA never hardcodes cell addresses.
 
----
-
-## VBA Modules
-
-| Module | Purpose |
-|--------|---------|
-| **Engine** | Core forecast builder and NPV calculator — handles segment revenue rollup, asset-heavy/light cost routing, NOL carryforward, debt amortisation, working capital |
-| **Valuation** | Writes the DCF valuation sheet — equity bridge, terminal value cross-checks, sensitivity grid |
-| **MonteCarlo** | Simulation engine — correlated draws, autocorrelation, mean-reversion, phase-based shocks, histogram generation |
-| **Financials** | Writes the projected financial statements to the Financials sheet |
-| **Scenarios** | Bull/Base/Bear scenario runner with time-decaying and year-level adjustments |
-| **Distributions** | Statistical distribution samplers — PERT, Normal, Triangular, Uniform, Lognormal, plus QuickSort and percentile functions |
-| **Constants** | Public types (ModelInputs, YearFinancials, ScenarioConfig, MCDistParams, MCPhaseConfig), design system colour palette, sheet name constants |
-| **Helpers** | Input readers, validators, named range utilities, WACC calculator, share dilution logic |
-| **modFormatStyles** | Shared design system — consistent formatting across all output sheets |
-| **RunALL** | Master orchestrator — individual entry points and full-model execution |
-| **AssetHeavy** | Toggle for switching between asset-heavy and asset-light cost structures |
-| **ScenarioHelper** | Setup utility for scenario named ranges |
-| **Movement** | Sheet navigation (Dashboard, Assumptions, Qualitative) |
-| **NoteEditor** | Cell comment management — delete and restore notes |
-
----
-
-## Toggle-Driven Methodology
-
-The model adapts to different company types through binary toggles on the Assumptions sheet:
-
-| Toggle | What It Does |
-|--------|-------------|
-| `UseWACC` | WACC (CAPM-derived) vs. flat discount rate |
-| `UseAssetHeavy` | Fixed+variable cost structure with PP&E schedule vs. simple % of revenue |
-| `UseDetailedNWC` | DSO/DIO/DPO working capital vs. simple NWC % of revenue |
-| `UseSegmentGM` | Segment-level gross margins vs. consolidated |
-| `UseYoYGM` | Year-over-year gross margin curves vs. flat margins |
-| `DCFBasis` | Cash Proxy (NI−CapEx+D&A) vs. UFCF as primary valuation |
-| `TVMethod` | Explicit Perpetuity / Gordon Growth / Exit Multiple |
-| `UseTargetCapStruct` | Market capital structure vs. target D/E for WACC |
+Eight binary toggles on the Assumptions sheet let the model adapt to different company types. Switching between WACC vs. flat discount rate, asset-heavy vs. asset-light cost structures, detailed vs. simple working capital, segment-level vs. consolidated margins, and three different terminal value methods.
 
 ---
 
