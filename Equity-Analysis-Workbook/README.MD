@@ -24,22 +24,22 @@ The model adapts to different company types through binary toggles:
 ## Output
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](Screenshots/dashboard.png)
 
 ### Projected Financials
-![Financials](screenshots/financials.png)
+![Financials](Screenshots/financials.png)
 
 ### Valuation
-![Valuation](screenshots/valuation.png)
+![Valuation](Screenshots/valuation.png)
 
 ### Scenario Analysis
-![Scenarios](screenshots/scenarios.png)
+![Scenarios](Screenshots/scenarios.png)
 
 ### Monte Carlo — Output Statistics
-![MC Output](screenshots/mc-output.png)
+![MC Output](Screenshots/mc-output.png)
 
 ### Monte Carlo — Histogram
-![MC Histogram](screenshots/mc-histogram.png)
+![MC Histogram](Screenshots/mc-histogram.png)
 
 ---
 
