@@ -1,38 +1,73 @@
 # Rishi's Equity Model
 
-Pretty proud of this one. 
+Pretty proud of this one.
 
-Agentic Engineering was utilised in error handling, cleanup, etc 
+I feel like it's the first consolidation of my knowledge in a very competent manner. Building and using this was such a terrific experience. It showed me a lot of valuable tools and skills and got me to really familiarise myself with the granularity that comes with fundamental financial analysis.
 
-I feel like it's the first consolidation of my knowledge in a very competent manner.
-
-Building and using this was such a terrific experience as it showed me a lot of valuable tools and skills and got me to really familiarise myself with the granularity that comes with fundamental financial analysis.
+Agentic Engineering was utilised in error handling, cleanup, and note making.
 
 ---
 
 ## How It Works
 
-The user populates a single Assumptions sheet with the target company's financials, valuation parameters, and uncertainty ranges. 
+The user populates a single Assumptions sheet with the target company's financials, valuation parameters, and uncertainty ranges. From there, macro buttons on the Dashboard drive the entire workflow.
 
-From there, macro buttons on the Dashboard drive the entire workflow.
+The model adapts to different company types through binary toggles:
 
-The model adapts to different company types through binary toggles: 
-
-- Asset-heavy manufacturers get a fixed+variable cost structure with a PP&E schedule 
-- Asset-light businesses use simpler margin-based projections. 
-- Multi-segment conglomerates get independent growth and gross margin curves per division. 
-- Single-product companies use one segment.
+- Asset-heavy manufacturers get a fixed+variable cost structure with a PP&E schedule
+- Asset-light businesses use simpler margin-based projections
+- Multi-segment conglomerates get independent growth and gross margin curves per division
+- Single-product companies use one segment
 
 ---
 
-## Screenshots
+## Output
 
-![Asset Heavy](screenshots/Asset Heavy Toggle Section.png)
-![Core1/2](screenshots/Core Inputs 1.png)
-![Core 2/2](screenshots/Core Inputs 2.png)
-![Monte-Carlo](screenshots/Monte-Carlo Input Section.png)
-![Scenario](screenshots/Scenario Input Section.png)
-![Segment](screenshots/Segment Config Section.png)
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Projected Financials
+![Financials](screenshots/financials.png)
+
+### Valuation
+![Valuation](screenshots/valuation.png)
+
+### Scenario Analysis
+![Scenarios](screenshots/scenarios.png)
+
+### Monte Carlo — Output Statistics
+![MC Output](screenshots/mc-output.png)
+
+### Monte Carlo — Histogram
+![MC Histogram](screenshots/mc-histogram.png)
+
+---
+
+## Case Study
+
+Here's a company I'm interested in run through the model. Full equity research write-ups live in the [Equity Research](../equity-research/) section of this portfolio.
+
+### SanDisk
+
+This company came to my attention for a few reasons. *Disclosure:* I am currently short this stock. 
+
+Its explosive share appreciation following its spin-off from Western Digital is obviously quite jarring. This got me interested in how a firm selling a commoditised product can be priced like Nvidia (10x+ in under a year). 
+
+The analysis on this company falls hand in hand with my prior knowledge in the tech and AI space. I've saved the thorough due diligence for my Equity Research GitHub section.
+
+**Key outputs:**
+
+| Metric | Value |
+|--------|-------|
+| IVPS (Base Case) | <!-- $ --> |
+| Market Price at Analysis | <!-- $ --> |
+| Implied Upside/Downside | <!-- % --> |
+| MC Iterations | <!-- e.g. 10,000 --> |
+| MC % Above Market Price | <!-- % --> |
+| Bull / Base / Bear IVPS | <!-- $ / $ / $ --> |
+
+
+> **[Full Write-Up →](../equity-research/)**
 
 ---
 
@@ -40,10 +75,9 @@ The model adapts to different company types through binary toggles:
 
 ### Valuation Engine
 
-The primary valuation runs on a **Cash Proxy DCF** (Net Income − CapEx + D&A)
-Unlevered Free Cash Flow is computed alongside as a cross-reference. 
+The primary valuation runs on a **Cash Proxy DCF** (Net Income − CapEx + D&A). Unlevered Free Cash Flow is computed alongside as a cross-reference.
 
-The user can switch between the two via a toggle. 
+The user can switch between the two via a toggle.
 
 Three terminal value methods are supported:
 
@@ -51,27 +85,27 @@ Three terminal value methods are supported:
 - **Explicit Perpetuity** — customisable year-by-year projection
 - **Exit Multiple** — EV/UFCF based terminal value
 
-The Valuation sheet outputs an intrinsic value per share (IVPS)
+The Valuation sheet outputs an intrinsic value per share (IVPS).
 
 ### Monte Carlo Simulation
 
-This builds on the standalone Monte Carlo Simulation Engine (Project 2 in this portfolio) but takes the concept significantly further. 
+This builds on the standalone Monte Carlo Simulation Engine (Project 2 in this portfolio) but takes the concept significantly further.
 
 Where the earlier project ran independent draws from basic distributions, this implementation adds:
 
-- **Correlated parameter draws** 
-- **Revenue autocorrelation** 
+- **Correlated parameter draws**
+- **Revenue autocorrelation**
 - **Mean-reversion dynamics**
-- **Phase-based shock regimes** 
-- **PERT, Normal, Triangular, Uniform, and Lognormal distributions** 
+- **Phase-based shock regimes**
+- **PERT, Normal, Triangular, Uniform, and Lognormal distributions**
 - **12+ variables**
-- **Full output statistics** 
+- **Full output statistics**
 
 The simulation runs configurable iterations (max 50,000) and outputs the percentage of iterations that exceed the current market price — a direct probabilistic answer to "is this stock cheap?"
 
 ### Scenario Analysis
 
-Bull/Base/Bear Scenario. You know the deal
+Bull/Base/Bear Scenario. You know the deal.
 
 ### Penman Reformulated Financials
 
@@ -95,8 +129,7 @@ The model is a 9-sheet workbook with clear separation of concerns:
 | **Formulas** | Reference sheet — 69 formulas, Penman reformulated balance sheet, computed ratios |
 | **Qualitative** | SWOT, VRIN, bear/bull thesis, probability-of-occurrence diagram |
 
-Data flows from Assumptions → Financials → Valuation → Scenarios / Monte Carlo.
-Named ranges create an abstraction layer so the VBA never hardcodes cell addresses.
+Data flows from Assumptions → Financials → Valuation → Scenarios / Monte Carlo. Named ranges create an abstraction layer so the VBA never hardcodes cell addresses.
 
 ---
 
