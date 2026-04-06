@@ -1,4 +1,4 @@
-# Monte Carlo Simulation Engine — Excel VBA
+# Monte Carlo Simulation Engine - Excel VBA
 
 A simulation tool that models the distribution of project NPV outcomes under uncertainty. 
 
@@ -8,7 +8,7 @@ Rather than relying on a single base case or a handful of scenarios, this macro 
 
 ## What I Learned
 
-This project pushed me well beyond basic VBA. I stopped studying maths formally in year 10 and as a result my scope of learning in this avenue of knowledge was definently hindered.
+This project pushed me well beyond basic VBA. I stopped studying maths formally in year 10 and as a result my scope of learning in this avenue of knowledge was definitely hindered.
 
 This was a great task that represents a small portion of the work I've done to get back on track.
 
@@ -41,5 +41,3 @@ The macro then runs the simulation, producing a full dataset of outcomes.
 ![Raw Output Data](screenshots/Monte_Output.png)
 
 ---
-
-
