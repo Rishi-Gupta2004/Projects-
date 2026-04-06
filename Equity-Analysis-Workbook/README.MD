@@ -27,13 +27,12 @@ The model adapts to different company types through binary toggles:
 
 ## Screenshots
 
-![Dashboard](screenshots/Dashboard.png)
-![Assumptions](screenshots/Assumptions.png)
-![Financials](screenshots/Financials.png)
-![Valuation](screenshots/Valuation.png)
-![Monte Carlo Output](screenshots/MC_Output.png)
-![Monte Carlo Histogram](screenshots/MC_Histogram.png)
-![Scenarios](screenshots/Scenarios.png)
+![Asset Heavy](screenshots/Asset Heavy Toggle Section.png)
+![Core1/2](screenshots/Core Inputs 1.png)
+![Core 2/2](screenshots/Core Inputs 2.png)
+![Monte-Carlo](screenshots/Monte-Carlo Input Section.png)
+![Scenario](screenshots/Scenario Input Section.png)
+![Segment](screenshots/Segment Config Section.png)
 
 ---
 
