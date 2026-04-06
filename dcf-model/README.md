@@ -6,9 +6,9 @@ A macro-driven DCF tool built in Excel VBA, designed to streamline the valuation
 
 ## What I Learned
 
-This was my first real VBA project. Honestly did not expect the vba course I took in 2025 to be applicable at all, but it was hoenstly one of the most interesting things i've learnt. 
+This was my first real VBA project. Honestly did not expect the VBA course I took in 2025 to be applicable at all, but it was honestly one of the most interesting things I've learnt. 
 
-Just makes me love excel even more
+Just makes me love Excel even more.
 
 ---
 
@@ -42,4 +42,3 @@ Useful when you need a quick answer without building a full model.
 ![DCF Userform](screenshots/DCF%20Userform.png)
 
 ---
-
